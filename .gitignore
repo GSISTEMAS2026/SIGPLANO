@@ -35,3 +35,10 @@ build/
 ### ENV ###
 .env
 *.env
+
+### Claude Code ###
+.claude/
+
+### Logs ###
+logs/
+*.log

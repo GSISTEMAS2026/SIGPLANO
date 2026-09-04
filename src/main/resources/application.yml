@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: sigplano-backend
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  datasource:
+    url: jdbc:mysql://localhost:3306/sigplano?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=America/Sao_Paulo
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL_GS_LOGIN}
+    password: ${EMAIL_GS_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+app:
+  sisergon:
+    url: ${SISERGON_URL}
+    login: ${SISERGON_LOGIN}
+    password: ${SISERGON_PASSWORD}
+  sigplano:
+    url: "http://localhost:4200"
+    endpoint: "/redefinir-senha?token="
+
+security:
+  jwt:
+    secret-key: ${JWT_SECRET}

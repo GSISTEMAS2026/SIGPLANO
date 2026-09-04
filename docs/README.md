@@ -1,27 +1,9 @@
 # Documentação do Projeto - SIGPLANO
 
-Bem-vindo à documentação técnica do **SIGPLANO** (Sistema de Planejamento e Orçamento Integrado da SEDUC).
+Toda a documentação técnica, de arquitetura, domínio e estado atual do **SIGPLANO** (Sistema de Planejamento e Orçamento Integrado da SEDUC) está consolidada em um único documento:
 
-Esta pasta contém as definições de arquitetura, domínio, fluxos e regras de negócio essenciais para a evolução e manutenção do sistema.
+## [STATUS_DESENVOLVIMENTO.md](STATUS_DESENVOLVIMENTO.md)
 
-## Índice de Documentação
+Cobre: o que é o sistema, arquitetura/stack, o que já foi implementado, regras de negócio vigentes, convenções de engenharia do repositório, regras já especificadas para as fases futuras, próximos passos, perguntas em aberto e dívida técnica conhecida.
 
-1. **[Análise e Planejamento Inicial](00-analise-e-planejamento.md)**
-   - Visão geral, viabilidade, próximos passos e dúvidas arquiteturais.
-
-2. **[Arquitetura do Sistema (Em breve)](01-arquitetura.md)**
-   - Detalhamento do Monólito Modular (Spring Boot).
-   - Definição dos módulos (IAM, Budget, Planning, Workflow).
-   - Comunicação e separação de persistência (MySQL x MinIO).
-
-3. **[Modelo de Dados Relacional (Em breve)](02-modelo-de-dados.md)**
-   - Estrutura de tabelas e relacionamentos.
-   - Domínios de Acesso (IAM), Ações (Planejamento) e Limites (Orçamento).
-
-4. **[Máquina de Estados e Fluxos de Trabalho (Em breve)](03-fluxos-de-estado.md)**
-   - Ciclo de vida das Ações/Atividades.
-   - Bypass Orçamentário e bloqueios seletivos de edição.
-
-5. **[Segurança e Integrações (Em breve)](04-seguranca-e-integracoes.md)**
-   - IAM, JWT.
-   - Regras de sincronização funcional com o sistema **Ergon**.
+Os documentos que existiam separadamente (análise inicial, specs de arquitetura, contexto para Claude Projects, rastreio de dúvidas, proposta de modelo IAM) foram consolidados nele e removidos, para eliminar contexto duplicado ou desatualizado entre arquivos.

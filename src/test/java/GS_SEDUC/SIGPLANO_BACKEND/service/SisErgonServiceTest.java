@@ -1,11 +1,11 @@
-package GS_SEDUC.SIGPLANO_BACKEND.iam.service;
+package GS_SEDUC.SIGPLANO_BACKEND.service;
 
-import GS_SEDUC.SIGPLANO_BACKEND.iam.client.sisergon.SisErgonConsumer;
-import GS_SEDUC.SIGPLANO_BACKEND.iam.client.sisergon.SisErgonTokenConfig;
-import GS_SEDUC.SIGPLANO_BACKEND.iam.client.sisergon.dto.response.LoginResponseDTO;
-import GS_SEDUC.SIGPLANO_BACKEND.iam.client.sisergon.dto.PessoaSisErgonDTO;
-import GS_SEDUC.SIGPLANO_BACKEND.iam.client.sisergon.dto.VinculoSisErgonDTO;
-import GS_SEDUC.SIGPLANO_BACKEND.iam.client.sisergon.dto.request.SisErgonLoginRequestDTO;
+import GS_SEDUC.SIGPLANO_BACKEND.client.sisergon.SisErgonConsumer;
+import GS_SEDUC.SIGPLANO_BACKEND.client.sisergon.SisErgonTokenConfig;
+import GS_SEDUC.SIGPLANO_BACKEND.client.sisergon.dto.response.LoginResponseDTO;
+import GS_SEDUC.SIGPLANO_BACKEND.client.sisergon.dto.PessoaSisErgonDTO;
+import GS_SEDUC.SIGPLANO_BACKEND.client.sisergon.dto.VinculoSisErgonDTO;
+import GS_SEDUC.SIGPLANO_BACKEND.client.sisergon.dto.request.SisErgonLoginRequestDTO;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
